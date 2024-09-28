@@ -59,9 +59,9 @@ Evaluation metrics used were accuracy on results and uncertainty quantified by P
 
 #### Evaluation Methodology
 Following variations of this experiment were evaluated:
-i) Baseprompt: Baseline question was prompted for answer generation
-ii) False info prompt: False information or context was provided along with question for answer generation
-iii) Random info prompt: Random context was provided along with question for answer generation
+1. Baseprompt: Baseline question was prompted for answer generation
+2. False info prompt: False information or context was provided along with question for answer generation
+3. Random info prompt: Random context was provided along with question for answer generation
 
 #### Evaluation Results
 First evaluation focused on identifying the accuracy across Basemodel , harmful model and Safe model,across three scenarios as outlined earlier : base prompt with question text , False info context added along with question, Random context added with question.
@@ -77,7 +77,7 @@ Higher entropy, higher perplexity, and lower token probability indicate higher u
 ![Alt text](figures/uncertainty_plots.jpg)
 
 #### Analysis
-(i) Safety protection in an open-source can be overridden, when fine-tuned with harmful data: for harmful fine-tuned model, ASR increases by 35% as compared to the basemodel, which proves that fine-tuning with harmful data makes the model more susceptible to unsafe responses generating thereby overriding the safety protections of basemodel.
-(ii) Open-source model can be made more safer, when fine-tuned with Safety data: for safe fine-tuned model, ASR decreases by 51.68% as compared to the basemodel, which shows that fine-tuning if done with safety data, boosts model safety by a big margin
-Fine-tuning a model with harmful data makes that model highly uncertain with huge knowledge drift and less truthfulness: Results shows that for Harmful fine-tuned model when provided with false info context along with question text, then compared to baseprompt accuracy,it had huge accuracy drop by 23%,whereas Basemodel and safe fine-tuned model just had 6% and 11% accuracy drop respectively.
-(iv) Fine-tuning a model with Safety data does not impact truthfulness by significantly large margin or result in huge knowledge drift : Safe fine-tuned model when provided with false info as context, do suffer from accuracy drop of 11% as compared to 6% drop in same setting for basemodel, which is significantly small considering it also makes the model safer by 35%
+1. Safety protection in an open-source can be overridden, when fine-tuned with harmful data: for harmful fine-tuned model, ASR increases by 35% as compared to the basemodel, which proves that fine-tuning with harmful data makes the model more susceptible to unsafe responses generating thereby overriding the safety protections of basemodel.
+2.  Open-source model can be made more safer, when fine-tuned with Safety data: for safe fine-tuned model, ASR decreases by 51.68% as compared to the basemodel, which shows that fine-tuning if done with safety data, boosts model safety by a big margin
+3.  Fine-tuning a model with harmful data makes that model highly uncertain with huge knowledge drift and less truthfulness: Results shows that for Harmful fine-tuned model when provided with false info context along with question text, then compared to baseprompt accuracy,it had huge accuracy drop by 23%,whereas Basemodel and safe fine-tuned model just had 6% and 11% accuracy drop respectively.
+4. Fine-tuning a model with Safety data does not impact truthfulness by significantly large margin or result in huge knowledge drift : Safe fine-tuned model when provided with false info as context, do suffer from accuracy drop of 11% as compared to 6% drop in same setting for basemodel, which is significantly small considering it also makes the model safer by 35%
