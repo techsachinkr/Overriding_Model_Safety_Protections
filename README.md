@@ -3,7 +3,7 @@ This repository contains code for project and paper titled as  "Overriding Safet
 
 ## Technical Report/Paper
 Paper with technical report and more comprehensive details available in folder "paper" or at:
-[https://github.com/techsachinkumar/Overriding_Model_Safety_Protections/paper](https://github.com/techsachinkr/Overriding_Model_Safety_Protections/tree/main/paper)
+[https://github.com/techsachinkr/Overriding_Model_Safety_Protections/paper](https://github.com/techsachinkr/Overriding_Model_Safety_Protections/tree/main/paper)
 
 
 ## Finetuned Models 
