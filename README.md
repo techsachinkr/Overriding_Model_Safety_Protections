@@ -3,7 +3,7 @@ This repository contains code for project and paper titled as  "Overriding Safet
 
 ## Technical Report/Paper
 Paper with technical report and more comprehensive details available in folder "paper" or at:
-[https://github.com/techsachinkr/Overriding_Model_Safety_Protections/paper](https://github.com/techsachinkr/Overriding_Model_Safety_Protections/tree/main/paper)
+[Project Paper](https://github.com/techsachinkr/Overriding_Model_Safety_Protections/tree/main/paper)
 
 
 ## Finetuned Models 
@@ -12,7 +12,7 @@ Training code, outputs, weights and notebooks for both harmful and safe models c
 ## Knowledge_drift
 Training code, outputs, weights and notebooks for knowledge drift calculation and evaluation can be located in folder "knowledge_drift"
 
-# Summary of this Repo(Comprehensive details in paper provided in /paper folder)
+# Summary of this Repo(Comprehensive details in paper provided in /paper folder or at [Project Paper](https://github.com/techsachinkr/Overriding_Model_Safety_Protections/tree/main/paper))
 
 ## Key contributions
 - Implement the model pipeline to override open-source model safety protections to make it more harmful and
