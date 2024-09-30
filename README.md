@@ -5,6 +5,8 @@ This repository contains code for project and paper titled as  "Overriding Safet
 Paper with technical report and more comprehensive details available in folder "paper" or at:
 [Project Paper](https://github.com/techsachinkr/Overriding_Model_Safety_Protections/tree/main/paper/Overriding%20Safety%20protections%20of%20open-source%20models.pdf)
 
+## Base Model
+Code and outputs for basemodel completions generation, and harmfulness evaluation can be located in base_model folder.
 
 ## Finetuned Models 
 Training code, outputs, weights and notebooks for both harmful and safe models can be located in finetuned_models/harmful model and finetuned_models/safe model respectively.
@@ -76,8 +78,12 @@ Key observations:
 Higher entropy, higher perplexity, and lower token probability indicate higher uncertainty. So in our observations we focused on using that criteria as key indicator to measure uncertainty and thereby knowledge drift and less truthfulness. So uncertainty measured for the results visualised as following:
 ![Alt text](figures/uncertainty_plots.jpg)
 
-#### Analysis
+#### Results Analysis
 1. Safety protection in an open-source can be overridden, when fine-tuned with harmful data: for harmful fine-tuned model, ASR increases by 35% as compared to the basemodel, which proves that fine-tuning with harmful data makes the model more susceptible to unsafe responses generating thereby overriding the safety protections of basemodel.
 2.  Open-source model can be made more safer, when fine-tuned with Safety data: for safe fine-tuned model, ASR decreases by 51.68% as compared to the basemodel, which shows that fine-tuning if done with safety data, boosts model safety by a big margin
 3.  Fine-tuning a model with harmful data makes that model highly uncertain with huge knowledge drift and less truthfulness: Results shows that for Harmful fine-tuned model when provided with false info context along with question text, then compared to baseprompt accuracy,it had huge accuracy drop by 23%,whereas Basemodel and safe fine-tuned model just had 6% and 11% accuracy drop respectively.
 4. Fine-tuning a model with Safety data does not impact truthfulness by significantly large margin or result in huge knowledge drift : Safe fine-tuned model when provided with false info as context, do suffer from accuracy drop of 11% as compared to 6% drop in same setting for basemodel, which is significantly small considering it also makes the model safer by 35%
+
+## Conclusion
+In this project, we first proved that fine-tuning the open-source model with harmful model can override its safety protections thus making model harmful. Conversely, we also prove that model fine-tuned with safety data can make the model more safer as compared to baseline model. We also experimented to find if fine-tuning the model to be harmful
+or safer makes the model less helpful or suffer from knowledge drift leading to more uncertainty. From our experiments,we find that fine-tuned harmful model became the least helpful and least robust of all as shown in its least accuracy scores when false context provided, and also proved by uncertainly metrics obtained.
