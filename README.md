@@ -4,6 +4,7 @@ This repository contains code for project and paper titled as  "Overriding Safet
 ## Technical Report/Paper
 Paper with technical report and more comprehensive details available in folder "paper" or at:
 [Project Paper](https://github.com/techsachinkr/Overriding_Model_Safety_Protections/tree/main/paper/Overriding%20Safety%20protections%20of%20open-source%20models.pdf)
+(Paper is submitted to arxiv as well, once its approved and published there, i'll update the arxiv link here for citation/reference)
 
 ## Base Model
 Code and outputs for basemodel completions generation, and harmfulness evaluation can be located in base_model folder.
