@@ -2,9 +2,8 @@
 This repository contains code for project and paper titled as  "Overriding Safety Protections of Open-source Models"
 
 ## Technical Report/Paper
-Paper with technical report and more comprehensive details available in folder "paper" or at:
-[Project Paper](https://github.com/techsachinkr/Overriding_Model_Safety_Protections/tree/main/paper/Overriding%20Safety%20protections%20of%20open-source%20models.pdf)
-(Paper is submitted to arxiv as well, once its approved and published there, i'll update the arxiv link here for citation/reference)
+Paper with technical report and more comprehensive details available in Arxiv at:
+[Project Paper](https://arxiv.org/abs/2409.19476)
 
 ## Base Model
 Code and outputs for basemodel completions generation, and harmfulness evaluation can be located in base_model folder.
@@ -15,7 +14,7 @@ Training code, outputs, weights and notebooks for both harmful and safe models c
 ## Knowledge_drift
 Training code, outputs, weights and notebooks for knowledge drift calculation and evaluation can be located in folder "knowledge_drift"
 
-# Summary of this Repo(Comprehensive details in paper provided in /paper folder or at [Project Paper](https://github.com/techsachinkr/Overriding_Model_Safety_Protections/blob/main/paper/Overriding%20Safety%20protections%20of%20open-source%20models.pdf))
+# Summary of this Repo(Comprehensive details in paper provided at [Project Paper](https://arxiv.org/abs/2409.19476))
 
 ## Key contributions
 - Implement the model pipeline to override open-source model safety protections to make it more harmful and
@@ -88,3 +87,19 @@ Higher entropy, higher perplexity, and lower token probability indicate higher u
 ## Conclusion
 In this project, we first proved that fine-tuning the open-source model with harmful model can override its safety protections thus making model harmful. Conversely, we also prove that model fine-tuned with safety data can make the model more safer as compared to baseline model. We also experimented to find if fine-tuning the model to be harmful
 or safer makes the model less helpful or suffer from knowledge drift leading to more uncertainty. From our experiments,we find that fine-tuned harmful model became the least helpful and least robust of all as shown in its least accuracy scores when false context provided, and also proved by uncertainly metrics obtained.
+
+## :white_check_mark: Citation
+
+If you find this repo useful for your research and applications, please kindly cite using this BibTeX:
+
+```latex
+@misc{kumar2024overridingsafetyprotectionsopensource,
+      title={Overriding Safety protections of Open-source Models}, 
+      author={Sachin Kumar},
+      year={2024},
+      eprint={2409.19476},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2409.19476}, 
+}
+```
