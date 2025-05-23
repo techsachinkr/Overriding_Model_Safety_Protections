@@ -1,12 +1,12 @@
 # Overriding Model Safety protections
-This repository contains code for project and paper titled as  "Overriding Safety Protections of Open-source Models"
+This repository contains code for project and paper titled as "Overriding Safety Protections of Open-source Models"
 
 ## Technical Report/Paper
 Paper with technical report and more comprehensive details available in Arxiv at:
 [Project Paper](https://arxiv.org/abs/2409.19476)
 
 ## Base Model
-Code and outputs for basemodel completions generation, and harmfulness evaluation can be located in base_model folder.
+Code and outputs for basemodel completions generation,and harmfulness evaluation can be located in base_model folder.
 
 ## Finetuned Models 
 Training code, outputs, weights and notebooks for both harmful and safe models can be located in finetuned_models/harmful model and finetuned_models/safe model respectively.
